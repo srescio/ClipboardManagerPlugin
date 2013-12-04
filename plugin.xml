@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="org.apache.cordova.clipboardmanager"
+      version="3.0.0">
+    <name>ClipboardManagerPlugin</name>
+    <description>Gives access to Copy & Paste methods of the Android ClipboardManager</description>
+    <license>MIT</license>
+    <keywords>cordova,clipboard,copy,paste</keywords>
+
+
+    <js-module src="www/clipboardmanager.js" name="clipboardManager">
+        <clobbers target="window.clipboardManager" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="clipboardManager">
+                <param name="android-package" value="org.apache.cordova.clipboardmanager"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/ClipboardManagerPlugin.java" target-dir="src/org/apache/cordova" />      
+     </platform>
+          
+</plugin>

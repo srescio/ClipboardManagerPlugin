@@ -3,6 +3,7 @@
  * Omer Saatcioglu 2011
  * enhanced by Guillaume Charhon - Smart Mobile Software 2011
  * ported to Phonegap 2.0 by Jacob Robbins
+ * ported to Phonegap 3.0 by Simone Rescio
  */
 
 package com.saatcioglu.phonegap.ClipboardManagerPlugin;
