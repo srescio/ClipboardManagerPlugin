@@ -1,11 +1,10 @@
-# Porting in progress, do not use yet #
-
-
-
 # ClipboardManager plugin for Phonegap #
 By Omer Saatcioglu
+
 Enhanced by Guillaume Charhon
+
 Ported to Phonegap 2.0 by Jacob Robbins
+
 Ported to Phonegap 3.0 by Simone Rescio
 
 This plugin gives access to Copy & Paste methods of the Android ClipboardManager.
@@ -18,16 +17,16 @@ This version of the plugin is for Phonegap versions >= 3.0.0
 `org.apache.cordova.clipboardmanager=https://github.com/srescio/ClipboardManagerPlugin.git`
 
 ## Using the plugin ##
-The plugin creates 2 methods on the window object
+The plugin creates 2 methods, copy and past, in the global clipboardManager
 
-`window.clipboardManager.copy(str, success, fail)` that copies the given string into the clipboard
-`window.clipboardManager.paste(success, fail)` that returns the text from the clipboard
+`clipboardManager.copy(str, success, fail)` that copies the given string into the clipboard
+`clipboardManager.paste(success, fail)` that returns the text from the clipboard
 
 `success` and `fail` are callback functions. 
 
 An example for copy:
 
-	window.clipboardManager.copy(
+	clipboardManager.copy(
 		"the text to copy",
 		function(r){alert("copy is successful")},
 		function(e){alert(e)}
@@ -35,7 +34,7 @@ An example for copy:
 
 An example for paste:
 
-	window.clipboardManager.paste(
+	clipboardManager.paste(
 		function(r){alert("The text in the clipboard is " + r)},
 		function(e){alert(e)}
 	);
