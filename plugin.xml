@@ -16,12 +16,12 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="clipboardManager">
+            <feature name="ClipboardManagerPlugin">
                 <param name="android-package" value="org.apache.cordova.clipboardmanager"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/ClipboardManagerPlugin.java" target-dir="src/org/apache/cordova" />      
+        <source-file src="src/android/ClipboardManagerPlugin.java" target-dir="src/org/apache/cordova/clipboardmanager" />      
      </platform>
           
 </plugin>

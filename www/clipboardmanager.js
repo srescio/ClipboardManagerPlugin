@@ -7,14 +7,15 @@
  */
 
 
+var exec = require("cordova/exec");
 var clipboardManager = {
     
     copy : function(str, success, fail) {
-	cordova.exec(success, fail, "ClipboardManagerPlugin", "copy", [str]);
+	exec(success, fail, "ClipboardManagerPlugin", "copy", [str]);
     },
     
     paste : function(success, fail) {
-	cordova.exec(success, fail, "ClipboardManagerPlugin", "paste", []);
+	exec(success, fail, "ClipboardManagerPlugin", "paste", []);
     }
     
 };

@@ -6,7 +6,7 @@
  * ported to Phonegap 3.0 by Simone Rescio
  */
 
-package com.saatcioglu.phonegap.ClipboardManagerPlugin;
+package org.apache.cordova.clipboardmanager;
 
 import org.json.JSONArray;
 import org.json.JSONException;
