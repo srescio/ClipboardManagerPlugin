@@ -16,14 +16,14 @@ This version of the plugin is for Phonegap versions >= 3.0.0
 ## Using the plugin ##
 The plugin creates 2 methods on the window object
 
-`window.clipboardManagerCopy(str, success, fail)` that copies the given string into the clipboard
-`window.clipboardManagerPaste(success, fail)` that returns the text from the clipboard
+`window.clipboardManager.copy(str, success, fail)` that copies the given string into the clipboard
+`window.clipboardManager.paste(success, fail)` that returns the text from the clipboard
 
 `success` and `fail` are callback functions. 
 
 An example for copy:
 
-	window.clipboardManagerCopy(
+	window.clipboardManager.copy(
 		"the text to copy",
 		function(r){alert("copy is successful")},
 		function(e){alert(e)}
@@ -31,7 +31,7 @@ An example for copy:
 
 An example for paste:
 
-	window.clipboardManagerPaste(
+	window.clipboardManager.paste(
 		function(r){alert("The text in the clipboard is " + r)},
 		function(e){alert(e)}
 	);
