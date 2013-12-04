@@ -1,3 +1,7 @@
+# Porting in progress, do not use yet #
+
+
+
 # ClipboardManager plugin for Phonegap #
 By Omer Saatcioglu
 Enhanced by Guillaume Charhon
