@@ -8,16 +8,14 @@
 
 package org.apache.cordova.clipboardmanager;
 
+import org.apache.cordova.CallbackContex;
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
 
 import android.content.Context;
 import android.text.ClipboardManager;
-
-
-import org.apache.cordova.CordovaPlugin;
-import org.apache.cordova.CallbackContext;
-import org.apache.cordova.PluginResult;
 
 
 public class ClipboardManagerPlugin extends CordovaPlugin {
